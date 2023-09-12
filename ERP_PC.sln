@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ERP_PC", "ERP_PC\ERP_PC.vbproj", "{D7E1DF08-9C03-45AF-8E8F-925383CC91A5}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AccesoDatos", "AccesoDatos\AccesoDatos.vbproj", "{249DF206-31C9-4CC7-936E-3AB6EC0F4F8E}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Funciones", "Funciones\Funciones.vbproj", "{54A3CABC-19AD-4CF1-9D90-3FD681E0805B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7E1DF08-9C03-45AF-8E8F-925383CC91A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7E1DF08-9C03-45AF-8E8F-925383CC91A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7E1DF08-9C03-45AF-8E8F-925383CC91A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7E1DF08-9C03-45AF-8E8F-925383CC91A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{249DF206-31C9-4CC7-936E-3AB6EC0F4F8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{249DF206-31C9-4CC7-936E-3AB6EC0F4F8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{249DF206-31C9-4CC7-936E-3AB6EC0F4F8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{249DF206-31C9-4CC7-936E-3AB6EC0F4F8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54A3CABC-19AD-4CF1-9D90-3FD681E0805B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54A3CABC-19AD-4CF1-9D90-3FD681E0805B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54A3CABC-19AD-4CF1-9D90-3FD681E0805B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54A3CABC-19AD-4CF1-9D90-3FD681E0805B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

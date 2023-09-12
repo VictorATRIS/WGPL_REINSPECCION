@@ -1,0 +1,530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D7E1DF08-9C03-45AF-8E8F-925383CC91A5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ERP_PC.My.MyApplication</StartupObject>
+    <RootNamespace>ERP_PC</RootNamespace>
+    <AssemblyName>ERP_PC</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ERP_PC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ERP_PC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v9.1.Core, Version=9.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DXCore.Controls.Data.v6.3, Version=9.1.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DXCore.Controls.Utils.v6.3, Version=9.1.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DXCore.Controls.XtraEditors.v6.3, Version=9.1.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DXCore.Controls.XtraGrid.v6.3, Version=9.1.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DXCore.Controls.XtraLayout.v6.3, Version=9.1.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v13.1.Core, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.OfficeSkins.v9.1, Version=9.1.3.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v13.1.Core, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v13.1.Core, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v13.1.Core, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Core.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.LayoutControl.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v13.1.UI, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v13.1.Wizard, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Access, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Excel, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\dia_atraso.Designer.vb">
+      <DependentUpon>dia_atraso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\dia_atraso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_830.Designer.vb">
+      <DependentUpon>erp_ctrl_830.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_830.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_cambiar_NoPlant.Designer.vb">
+      <DependentUpon>erp_ctrl_cambiar_NoPlant.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_cambiar_NoPlant.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_crear_rev_4mf.Designer.vb">
+      <DependentUpon>erp_ctrl_crear_rev_4mf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_crear_rev_4mf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_datos_ips.Designer.vb">
+      <DependentUpon>erp_ctrl_datos_ips.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_datos_ips.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_doh_projection.Designer.vb">
+      <DependentUpon>erp_ctrl_doh_projection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_doh_projection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_formato_largo.Designer.vb">
+      <DependentUpon>erp_ctrl_formato_largo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_formato_largo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_four_months_forecaste.Designer.vb">
+      <DependentUpon>erp_ctrl_four_months_forecaste.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_four_months_forecaste.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_generar_mensual_backorders.Designer.vb">
+      <DependentUpon>erp_ctrl_generar_mensual_backorders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_generar_mensual_backorders.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_generar_sews_part.Designer.vb">
+      <DependentUpon>erp_ctrl_generar_sews_part.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_generar_sews_part.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_genera_ecn.Designer.vb">
+      <DependentUpon>erp_ctrl_genera_ecn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_genera_ecn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_genera_master_smh.Designer.vb">
+      <DependentUpon>erp_ctrl_genera_master_smh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_genera_master_smh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_importacion_xls_smh.Designer.vb">
+      <DependentUpon>erp_ctrl_importacion_xls_smh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_importacion_xls_smh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_importar_ajustes_temporales.Designer.vb">
+      <DependentUpon>erp_ctrl_importar_ajustes_temporales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_importar_ajustes_temporales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_import_doh_lines.Designer.vb">
+      <DependentUpon>erp_ctrl_import_doh_lines.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_import_doh_lines.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_lots_adjustments.Designer.vb">
+      <DependentUpon>erp_ctrl_lots_adjustments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_lots_adjustments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_modificacion_linea.Designer.vb">
+      <DependentUpon>erp_ctrl_modificacion_linea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_modificacion_linea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_must_go.Designer.vb">
+      <DependentUpon>erp_ctrl_must_go.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_must_go.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_registro_incrementos.Designer.vb">
+      <DependentUpon>erp_ctrl_registro_incrementos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_registro_incrementos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_seguimiento_diario_kmh.Designer.vb">
+      <DependentUpon>erp_ctrl_seguimiento_diario_kmh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_seguimiento_diario_kmh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_snapshots.Designer.vb">
+      <DependentUpon>erp_ctrl_snapshots.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\erp_ctrl_snapshots.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\erp_main.Designer.vb">
+      <DependentUpon>erp_main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\erp_main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\erp_main_login_load.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\erp_main_login_load.Designer.vb">
+      <DependentUpon>erp_main_login_load.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\erp_mantenimiento_xref.Designer.vb">
+      <DependentUpon>erp_mantenimiento_xref.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\erp_mantenimiento_xref.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\dia_atraso.resx">
+      <DependentUpon>dia_atraso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\erp_ctrl_830.resx">
+      <DependentUpon>erp_ctrl_830.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\erp_ctrl_cambiar_NoPlant.resx">
+      <DependentUpon>erp_ctrl_cambiar_NoPlant.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\erp_ctrl_crear_rev_4mf.resx">
+      <DependentUpon>erp_ctrl_crear_rev_4mf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\erp_ctrl_datos_ips.resx">
+      <DependentUpon>erp_ctrl_datos_ips.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\erp_ctrl_doh_projection.resx">
+      <DependentUpon>erp_ctrl_doh_projection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\erp_ctrl_formato_largo.resx">
+      <DependentUpon>erp_ctrl_formato_largo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\erp_ctrl_four_months_forecaste.resx">
+      <DependentUpon>erp_ctrl_four_months_forecaste.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\erp_ctrl_generar_mensual_backorders.resx">
+      <DependentUpon>erp_ctrl_generar_mensual_backorders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\erp_ctrl_generar_sews_part.resx">
+      <DependentUpon>erp_ctrl_generar_sews_part.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\erp_ctrl_genera_ecn.resx">
+      <DependentUpon>erp_ctrl_genera_ecn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\erp_ctrl_genera_master_smh.resx">
+      <DependentUpon>erp_ctrl_genera_master_smh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\erp_ctrl_importacion_xls_smh.resx">
+      <DependentUpon>erp_ctrl_importacion_xls_smh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\erp_ctrl_importar_ajustes_temporales.resx">
+      <DependentUpon>erp_ctrl_importar_ajustes_temporales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\erp_ctrl_import_doh_lines.resx">
+      <DependentUpon>erp_ctrl_import_doh_lines.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\erp_ctrl_lots_adjustments.resx">
+      <DependentUpon>erp_ctrl_lots_adjustments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\erp_ctrl_modificacion_linea.resx">
+      <DependentUpon>erp_ctrl_modificacion_linea.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\erp_ctrl_must_go.resx">
+      <DependentUpon>erp_ctrl_must_go.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\erp_ctrl_registro_incrementos.resx">
+      <DependentUpon>erp_ctrl_registro_incrementos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\erp_ctrl_seguimiento_diario_kmh.resx">
+      <DependentUpon>erp_ctrl_seguimiento_diario_kmh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\erp_ctrl_snapshots.resx">
+      <DependentUpon>erp_ctrl_snapshots.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\erp_main.resx">
+      <DependentUpon>erp_main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\erp_main_login_load.resx">
+      <DependentUpon>erp_main_login_load.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\erp_mantenimiento_xref.resx">
+      <DependentUpon>erp_mantenimiento_xref.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccesoDatos\AccesoDatos.vbproj">
+      <Project>{249df206-31c9-4cc7-936e-3ab6ec0f4f8e}</Project>
+      <Name>AccesoDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Funciones\Funciones.vbproj">
+      <Project>{54a3cabc-19ad-4cf1-9d90-3fd681e0805b}</Project>
+      <Name>Funciones</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Modules\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-loginTNS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Car-Electrical-System.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol-Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\import.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Desktop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow-Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol-Check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol-Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_blue_mydocuments.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Defragmentation4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulto.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Desfragmentation3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ima2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ima.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ima3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reporte1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reporte2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Config.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Config-Tools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Laser_Printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grupo_usuarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-añadir-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-confirmar-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-guardar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-guardar-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-guardar-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-guardar-301.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-de-acuerdo-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eliminar-papelera-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-salir-sin-actualizar-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-salir-sin-actualizar-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-lupa-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-análisis-mecanico-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cambiar-30.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
