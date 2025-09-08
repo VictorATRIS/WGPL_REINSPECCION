@@ -1,0 +1,532 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WGPL_REINSPECTION
+</name>
+</assembly>
+<members>
+<member name="P:WGPL_REINSPECTION.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.agregar">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.agregar1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.Arrow_Down">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.bubble">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.bulto">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.Calendar">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.Cambio">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.Car_Electrical_System">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.Config">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.Config_Tools">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.Defragmentation4">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.Desfragmentation3">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.Desktop">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.Download">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.ERP">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.folder_blue_mydocuments">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.fondo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.grupo_usuarios">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_acción_general_obligatoria_100">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_aceptar_48">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_activar_100">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_activar_1001">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_activar_64">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_actualizar_30">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_agregar_regla_96">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_alternar_encendido_48">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_añadir_24">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_añadir_48">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_análisis_mecanico_30">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_baja_prioridad_48">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_basura_llena_24">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_borrar_para_siempre_24">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_calendario_48">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_cambiar_30">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_cambiar_48">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_cancelar_suscripción_24">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_cierre_de_sesión_redondeado_hacia_abajo_64">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_comprobado_24">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_comprobado_241">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_confirmar_50">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_consulta_de_combinación_interna_derecha_50">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_consulta_de_combinación_interna_derecha_96">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_datos_en_ambas_direcciones_50">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_de_acuerdo_30">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_diagrama_de_flujo_50">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_diagrama_de_venn_64">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_eliminar_100">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_eliminar_30">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_eliminar_64">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_eliminar_641">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_eliminar_papelera_24">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_flecha_60">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_flechas_dobles_hacia_arriba_64">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_general_91">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_go_back_48">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_go_back_64">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_go_back_96">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_guardar">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_guardar_30">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_guardar_301">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_guardar_48">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_guardar_50">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_guardar_64">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_importación_xls_80">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_instalando_actualizaciones_26">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_instalando_actualizaciones_64">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_izquierda_en_círculo_2_50">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_lupa_24">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_maximum_order_32">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_mejora_48">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_mejora_481">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_mensaje_24">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_microsoft_excel_2019_48">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_mover_60">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_mover_por_carretilla_60">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_ms_excel_24">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_multitud_100">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_nuevo_64">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_para_estrenar_50">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_para_estrenar_50__1_">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_para_estrenar_64">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_para_estrenar_641">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_plan_48">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_proceso_48">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_produccion_de_cafe_en_granos_externos_otros_lucio_imagen_5_50">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_reloj_50">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_reporte_de_negocios_24">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_reporte_de_negocios_24__1_">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_salir_sin_actualizar_16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_salir_sin_actualizar_48">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_tirar_de_una_caja_48">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.icons8_trabajo_duro_48">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.Ima">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.ima2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.Ima3">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.import">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.Laser_Printer">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.logo_loginTNS">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.lupa">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.MicrosoftTeams_image__1_">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.MicrosoftTeams_image__1_1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.MicrosoftTeams_image__2_">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.plan">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.plan1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.Registry">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.reporte1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.reporte2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.Search1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.slide01">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.stock_chart">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.Symbol_Add">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.Symbol_Check">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.Symbol_Refresh">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WGPL_REINSPECTION.My.Resources.Resources.WIN_20231027_16_55_40_Pro">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:WGPL_REINSPECTION.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:WGPL_REINSPECTION.ERPDataSet.ERP_CTRL_MFG_SECTIONSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WGPL_REINSPECTION.ERPDataSet.ERP_CTRL_MFG_SECTIONSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WGPL_REINSPECTION.ERPDataSet.ERP_CTRL_MFG_SECTIONSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WGPL_REINSPECTION.ERPDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:WGPL_REINSPECTION.ERPDataSetTableAdapters.ERP_CTRL_MFG_SECTIONSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:WGPL_REINSPECTION.ERPDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(WGPL_REINSPECTION.ERPDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:WGPL_REINSPECTION.ERPDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(WGPL_REINSPECTION.ERPDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:WGPL_REINSPECTION.ERPDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(WGPL_REINSPECTION.ERPDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:WGPL_REINSPECTION.ERPDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:WGPL_REINSPECTION.ERPDataSetTableAdapters.TableAdapterManager.UpdateAll(WGPL_REINSPECTION.ERPDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:WGPL_REINSPECTION.ERPDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:WGPL_REINSPECTION.ERPDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:WGPL_REINSPECTION.ERPDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+</members>
+</doc>
