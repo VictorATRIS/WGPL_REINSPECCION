@@ -91,7 +91,7 @@ Partial Class erp_main_login_load
         'img_locallogo
         '
         Me.img_locallogo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.img_locallogo.Image = Global.ERP_PC.My.Resources.Resources.logo_loginTNS
+        Me.img_locallogo.Image = Global.WGPL_REINSPECTION.My.Resources.Resources.logo_loginTNS
         Me.img_locallogo.Location = New System.Drawing.Point(376, 551)
         Me.img_locallogo.Name = "img_locallogo"
         Me.img_locallogo.Size = New System.Drawing.Size(202, 71)

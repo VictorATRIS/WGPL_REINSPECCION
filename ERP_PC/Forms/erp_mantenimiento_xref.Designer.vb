@@ -207,7 +207,7 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem8
         '
         Me.BarButtonItem8.Caption = "Importacion SMH de XLS"
-        Me.BarButtonItem8.Glyph = Global.ERP_PC.My.Resources.Resources.import
+        Me.BarButtonItem8.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.import
         Me.BarButtonItem8.Id = 12
         Me.BarButtonItem8.Name = "BarButtonItem8"
         Me.BarButtonItem8.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -216,7 +216,7 @@ Partial Class erp_mantenimiento_xref
         'butGeneraRevision
         '
         Me.butGeneraRevision.Caption = "Genera Revision de SMH"
-        Me.butGeneraRevision.Glyph = Global.ERP_PC.My.Resources.Resources.Symbol_Add
+        Me.butGeneraRevision.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.Symbol_Add
         Me.butGeneraRevision.Id = 15
         Me.butGeneraRevision.Name = "butGeneraRevision"
         Me.butGeneraRevision.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -225,7 +225,7 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem10
         '
         Me.BarButtonItem10.Caption = "Generar Back Orders Mensuales 1 dia "
-        Me.BarButtonItem10.Glyph = Global.ERP_PC.My.Resources.Resources.Desktop
+        Me.BarButtonItem10.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.Desktop
         Me.BarButtonItem10.Id = 16
         Me.BarButtonItem10.Name = "BarButtonItem10"
         Me.BarButtonItem10.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -234,7 +234,7 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem11
         '
         Me.BarButtonItem11.Caption = "Importar Ajustes Temporales"
-        Me.BarButtonItem11.Glyph = Global.ERP_PC.My.Resources.Resources.Arrow_Down
+        Me.BarButtonItem11.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.Arrow_Down
         Me.BarButtonItem11.Id = 17
         Me.BarButtonItem11.Name = "BarButtonItem11"
         Me.BarButtonItem11.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -243,7 +243,7 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem12
         '
         Me.BarButtonItem12.Caption = "Generar ECN"
-        Me.BarButtonItem12.Glyph = Global.ERP_PC.My.Resources.Resources.Symbol_Add
+        Me.BarButtonItem12.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.Symbol_Add
         Me.BarButtonItem12.Id = 18
         Me.BarButtonItem12.Name = "BarButtonItem12"
         Me.BarButtonItem12.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -252,7 +252,7 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem13
         '
         Me.BarButtonItem13.Caption = "Generar Revision de Working Days"
-        Me.BarButtonItem13.Glyph = Global.ERP_PC.My.Resources.Resources.Symbol_Add
+        Me.BarButtonItem13.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.Symbol_Add
         Me.BarButtonItem13.Id = 19
         Me.BarButtonItem13.Name = "BarButtonItem13"
         Me.BarButtonItem13.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -261,21 +261,21 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem14
         '
         Me.BarButtonItem14.Caption = "Modificar Dia de Atraso"
-        Me.BarButtonItem14.Glyph = Global.ERP_PC.My.Resources.Resources.Symbol_Check
+        Me.BarButtonItem14.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.Symbol_Check
         Me.BarButtonItem14.Id = 20
         Me.BarButtonItem14.Name = "BarButtonItem14"
         '
         'BarButtonItem15
         '
         Me.BarButtonItem15.Caption = "Modificacion de Linea por Transferencia / Dual Plant"
-        Me.BarButtonItem15.Glyph = Global.ERP_PC.My.Resources.Resources.Symbol_Refresh
+        Me.BarButtonItem15.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.Symbol_Refresh
         Me.BarButtonItem15.Id = 21
         Me.BarButtonItem15.Name = "BarButtonItem15"
         '
         'BarButtonItem16
         '
         Me.BarButtonItem16.Caption = "Produccion por Linea y Turno"
-        Me.BarButtonItem16.Glyph = Global.ERP_PC.My.Resources.Resources.stock_chart
+        Me.BarButtonItem16.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.stock_chart
         Me.BarButtonItem16.Id = 22
         Me.BarButtonItem16.Name = "BarButtonItem16"
         Me.BarButtonItem16.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -284,7 +284,7 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem17
         '
         Me.BarButtonItem17.Caption = "Historial de Capacidades por Linea"
-        Me.BarButtonItem17.Glyph = Global.ERP_PC.My.Resources.Resources.reporte1
+        Me.BarButtonItem17.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.reporte1
         Me.BarButtonItem17.Id = 23
         Me.BarButtonItem17.Name = "BarButtonItem17"
         Me.BarButtonItem17.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -293,7 +293,7 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem18
         '
         Me.BarButtonItem18.Caption = "ECN por Aplicar"
-        Me.BarButtonItem18.Glyph = Global.ERP_PC.My.Resources.Resources.Ima
+        Me.BarButtonItem18.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.Ima
         Me.BarButtonItem18.Id = 24
         Me.BarButtonItem18.Name = "BarButtonItem18"
         Me.BarButtonItem18.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -302,7 +302,7 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem21
         '
         Me.BarButtonItem21.Caption = "Consulta Prod para Adherencia"
-        Me.BarButtonItem21.Glyph = Global.ERP_PC.My.Resources.Resources.Registry
+        Me.BarButtonItem21.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.Registry
         Me.BarButtonItem21.Id = 28
         Me.BarButtonItem21.Name = "BarButtonItem21"
         Me.BarButtonItem21.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -311,7 +311,7 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem22
         '
         Me.BarButtonItem22.Caption = "Four Months Forecast"
-        Me.BarButtonItem22.Glyph = Global.ERP_PC.My.Resources.Resources.stock_chart
+        Me.BarButtonItem22.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.stock_chart
         Me.BarButtonItem22.Id = 29
         Me.BarButtonItem22.Name = "BarButtonItem22"
         Me.BarButtonItem22.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -320,7 +320,7 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem23
         '
         Me.BarButtonItem23.Caption = "Ajustes Manuales de Lotes"
-        Me.BarButtonItem23.Glyph = Global.ERP_PC.My.Resources.Resources.plan
+        Me.BarButtonItem23.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.plan
         Me.BarButtonItem23.Id = 30
         Me.BarButtonItem23.Name = "BarButtonItem23"
         Me.BarButtonItem23.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -330,7 +330,7 @@ Partial Class erp_mantenimiento_xref
         '
         Me.BarButtonItem24.Caption = "Solicitud de Reposicion de Etiquetas"
         Me.BarButtonItem24.Enabled = False
-        Me.BarButtonItem24.Glyph = Global.ERP_PC.My.Resources.Resources.plan1
+        Me.BarButtonItem24.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.plan1
         Me.BarButtonItem24.Id = 31
         Me.BarButtonItem24.Name = "BarButtonItem24"
         Me.BarButtonItem24.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -340,7 +340,7 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem25
         '
         Me.BarButtonItem25.Caption = "Agregar DOH a Atrasos por Fecha"
-        Me.BarButtonItem25.Glyph = Global.ERP_PC.My.Resources.Resources.Calendar
+        Me.BarButtonItem25.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.Calendar
         Me.BarButtonItem25.Id = 32
         Me.BarButtonItem25.Name = "BarButtonItem25"
         Me.BarButtonItem25.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -349,7 +349,7 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem26
         '
         Me.BarButtonItem26.Caption = "Generar Plan en KMH"
-        Me.BarButtonItem26.Glyph = Global.ERP_PC.My.Resources.Resources.Defragmentation4
+        Me.BarButtonItem26.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.Defragmentation4
         Me.BarButtonItem26.Id = 33
         Me.BarButtonItem26.Name = "BarButtonItem26"
         Me.BarButtonItem26.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -358,7 +358,7 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem19
         '
         Me.BarButtonItem19.Caption = "Importacion de IPS"
-        Me.BarButtonItem19.Glyph = Global.ERP_PC.My.Resources.Resources.Download
+        Me.BarButtonItem19.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.Download
         Me.BarButtonItem19.Id = 35
         Me.BarButtonItem19.Name = "BarButtonItem19"
         Me.BarButtonItem19.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -367,14 +367,14 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem28
         '
         Me.BarButtonItem28.Caption = "Formato Largo"
-        Me.BarButtonItem28.Glyph = Global.ERP_PC.My.Resources.Resources.folder_blue_mydocuments
+        Me.BarButtonItem28.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.folder_blue_mydocuments
         Me.BarButtonItem28.Id = 36
         Me.BarButtonItem28.Name = "BarButtonItem28"
         '
         'BarButtonItem29
         '
         Me.BarButtonItem29.Caption = "Importacion DOH Lines"
-        Me.BarButtonItem29.Glyph = Global.ERP_PC.My.Resources.Resources.import
+        Me.BarButtonItem29.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.import
         Me.BarButtonItem29.Id = 37
         Me.BarButtonItem29.Name = "BarButtonItem29"
         Me.BarButtonItem29.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -383,7 +383,7 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem20
         '
         Me.BarButtonItem20.Caption = "Nuevo Sews_Part_No"
-        Me.BarButtonItem20.Glyph = Global.ERP_PC.My.Resources.Resources.Defragmentation4
+        Me.BarButtonItem20.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.Defragmentation4
         Me.BarButtonItem20.Id = 39
         Me.BarButtonItem20.Name = "BarButtonItem20"
         Me.BarButtonItem20.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -392,7 +392,7 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem30
         '
         Me.BarButtonItem30.Caption = "SNAPSHOTS"
-        Me.BarButtonItem30.Glyph = Global.ERP_PC.My.Resources.Resources.Calendar
+        Me.BarButtonItem30.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.Calendar
         Me.BarButtonItem30.Id = 40
         Me.BarButtonItem30.Name = "BarButtonItem30"
         Me.BarButtonItem30.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -401,7 +401,7 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem31
         '
         Me.BarButtonItem31.Caption = "Generar REV R8"
-        Me.BarButtonItem31.Glyph = Global.ERP_PC.My.Resources.Resources.Desfragmentation3
+        Me.BarButtonItem31.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.Desfragmentation3
         Me.BarButtonItem31.Id = 41
         Me.BarButtonItem31.Name = "BarButtonItem31"
         Me.BarButtonItem31.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -410,7 +410,7 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem32
         '
         Me.BarButtonItem32.Caption = "Must GO"
-        Me.BarButtonItem32.Glyph = Global.ERP_PC.My.Resources.Resources.bulto
+        Me.BarButtonItem32.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.bulto
         Me.BarButtonItem32.Id = 43
         Me.BarButtonItem32.Name = "BarButtonItem32"
         Me.BarButtonItem32.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -419,7 +419,7 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem33
         '
         Me.BarButtonItem33.Caption = "Autorizacion"
-        Me.BarButtonItem33.Glyph = Global.ERP_PC.My.Resources.Resources.reporte2
+        Me.BarButtonItem33.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.reporte2
         Me.BarButtonItem33.Id = 44
         Me.BarButtonItem33.Name = "BarButtonItem33"
         Me.BarButtonItem33.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -428,7 +428,7 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem34
         '
         Me.BarButtonItem34.Caption = "Modificacion STD Pack y Container"
-        Me.BarButtonItem34.Glyph = Global.ERP_PC.My.Resources.Resources.Config
+        Me.BarButtonItem34.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.Config
         Me.BarButtonItem34.Id = 45
         Me.BarButtonItem34.Name = "BarButtonItem34"
         Me.BarButtonItem34.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -437,21 +437,21 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem35
         '
         Me.BarButtonItem35.Caption = "Configuración en líneas y flujos"
-        Me.BarButtonItem35.Glyph = Global.ERP_PC.My.Resources.Resources.Config_Tools
+        Me.BarButtonItem35.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.Config_Tools
         Me.BarButtonItem35.Id = 46
         Me.BarButtonItem35.Name = "BarButtonItem35"
         '
         'BarButtonItem36
         '
         Me.BarButtonItem36.Caption = "Consulta Etiquetas de Bolsa"
-        Me.BarButtonItem36.Glyph = Global.ERP_PC.My.Resources.Resources.Search1
+        Me.BarButtonItem36.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.Search1
         Me.BarButtonItem36.Id = 47
         Me.BarButtonItem36.Name = "BarButtonItem36"
         '
         'BarButtonItem37
         '
         Me.BarButtonItem37.Caption = "Rprt Etiquetas Virtuales"
-        Me.BarButtonItem37.Glyph = Global.ERP_PC.My.Resources.Resources.Laser_Printer
+        Me.BarButtonItem37.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.Laser_Printer
         Me.BarButtonItem37.Id = 48
         Me.BarButtonItem37.Name = "BarButtonItem37"
         '
@@ -459,7 +459,7 @@ Partial Class erp_mantenimiento_xref
         '
         Me.BarButtonItem38.Caption = "Formacion Access"
         Me.BarButtonItem38.Enabled = False
-        Me.BarButtonItem38.Glyph = Global.ERP_PC.My.Resources.Resources.grupo_usuarios
+        Me.BarButtonItem38.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.grupo_usuarios
         Me.BarButtonItem38.Id = 49
         Me.BarButtonItem38.Name = "BarButtonItem38"
         Me.BarButtonItem38.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -469,7 +469,7 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem39
         '
         Me.BarButtonItem39.Caption = "Consulta CND Primero del Mes"
-        Me.BarButtonItem39.Glyph = Global.ERP_PC.My.Resources.Resources.Desktop
+        Me.BarButtonItem39.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.Desktop
         Me.BarButtonItem39.Id = 50
         Me.BarButtonItem39.Name = "BarButtonItem39"
         '
@@ -477,7 +477,7 @@ Partial Class erp_mantenimiento_xref
         '
         Me.BarButtonItem40.Caption = "Plan en Golpes de Bateria"
         Me.BarButtonItem40.Enabled = False
-        Me.BarButtonItem40.Glyph = Global.ERP_PC.My.Resources.Resources.stock_chart
+        Me.BarButtonItem40.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.stock_chart
         Me.BarButtonItem40.Id = 51
         Me.BarButtonItem40.Name = "BarButtonItem40"
         Me.BarButtonItem40.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -487,7 +487,7 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem41
         '
         Me.BarButtonItem41.Caption = "Registro de Incrementos"
-        Me.BarButtonItem41.Glyph = Global.ERP_PC.My.Resources.Resources.ima2
+        Me.BarButtonItem41.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.ima2
         Me.BarButtonItem41.Id = 52
         Me.BarButtonItem41.Name = "BarButtonItem41"
         Me.BarButtonItem41.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -496,7 +496,7 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem42
         '
         Me.BarButtonItem42.Caption = "830"
-        Me.BarButtonItem42.Glyph = Global.ERP_PC.My.Resources.Resources.Desfragmentation3
+        Me.BarButtonItem42.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.Desfragmentation3
         Me.BarButtonItem42.Id = 53
         Me.BarButtonItem42.Name = "BarButtonItem42"
         Me.BarButtonItem42.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -505,7 +505,7 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem43
         '
         Me.BarButtonItem43.Caption = "DOH Projection"
-        Me.BarButtonItem43.Glyph = Global.ERP_PC.My.Resources.Resources.Ima
+        Me.BarButtonItem43.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.Ima
         Me.BarButtonItem43.Id = 54
         Me.BarButtonItem43.Name = "BarButtonItem43"
         Me.BarButtonItem43.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -514,14 +514,14 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem44
         '
         Me.BarButtonItem44.Caption = "Consulta de Produccion GACS"
-        Me.BarButtonItem44.Glyph = Global.ERP_PC.My.Resources.Resources.bubble
+        Me.BarButtonItem44.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.bubble
         Me.BarButtonItem44.Id = 55
         Me.BarButtonItem44.Name = "BarButtonItem44"
         '
         'BarButtonItem45
         '
         Me.BarButtonItem45.Caption = "Ajustes Menores Adherencia"
-        Me.BarButtonItem45.Glyph = Global.ERP_PC.My.Resources.Resources.Desktop
+        Me.BarButtonItem45.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.Desktop
         Me.BarButtonItem45.Id = 56
         Me.BarButtonItem45.Name = "BarButtonItem45"
         Me.BarButtonItem45.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -530,7 +530,7 @@ Partial Class erp_mantenimiento_xref
         'BarButtonItem46
         '
         Me.BarButtonItem46.Caption = "Seguimiento KMH Diario"
-        Me.BarButtonItem46.Glyph = Global.ERP_PC.My.Resources.Resources.Ima3
+        Me.BarButtonItem46.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.Ima3
         Me.BarButtonItem46.Id = 57
         Me.BarButtonItem46.Name = "BarButtonItem46"
         Me.BarButtonItem46.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
@@ -539,7 +539,7 @@ Partial Class erp_mantenimiento_xref
         'barButonCambiarNo
         '
         Me.barButonCambiarNo.Caption = "Cambiar No. de planta"
-        Me.barButonCambiarNo.Glyph = Global.ERP_PC.My.Resources.Resources.icons8_cambiar_30
+        Me.barButonCambiarNo.Glyph = Global.WGPL_REINSPECTION.My.Resources.Resources.icons8_cambiar_30
         Me.barButonCambiarNo.Id = 68
         Me.barButonCambiarNo.Name = "barButonCambiarNo"
         '

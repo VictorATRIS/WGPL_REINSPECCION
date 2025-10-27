@@ -97,7 +97,7 @@ Public Class Reinspeccion
                 checkedCombo.Refresh()
                 sql = "select distinct d.SortRequest_Id from ERP_CTRL_WGPL_SORT_REQUEST_DT d" &
                     " join ERP_CTRL_WGPL_SORT_REQUEST r on r.SortRequest_Id = d.SortRequest_Id " &
-                       " WHERE Serial_no = '" & textSerial.Text.Trim.Substring(1) & "' and statusRequest = '2' "
+                       " WHERE Serial_no = '" & textSerial.Text.Trim.Substring(1) & "' and statusRequest = '2' and d.master in (select master from ERP_CTRL_WGPL_LOCATIONS_QA) "
                 ds = Consulta_Datos(sql, var_conexionERP)
 
                 ' Configurar propiedades del combo
@@ -126,7 +126,7 @@ Public Class Reinspeccion
                 sql = "SELECT TOP 1 d.SortRequest_Id, d.PRODUCT_NO, d.Serial_no, d.Qty, d.Master " &
                       "FROM ERP_CTRL_WGPL_SORT_REQUEST_DT d " &
                       "JOIN ERP_CTRL_WGPL_SORT_REQUEST r ON r.SortRequest_Id = d.SortRequest_Id " &
-                      "WHERE d.Serial_no = '" & textSerial.Text.Trim.Substring(1) & "' and statusRequest IN( '2' ,'99')"
+                      "WHERE d.Serial_no = '" & textSerial.Text.Trim.Substring(1) & "' and statusRequest IN( '2' ,'99') and d.master in (select master from ERP_CTRL_WGPL_LOCATIONS_QA) "
                 ds = Consulta_Datos(sql, var_conexionERP)
 
                 If ds IsNot Nothing And ds.Tables.Count > 0 And ds.Tables(0).Rows.Count > 0 Then
@@ -268,6 +268,7 @@ Public Class Reinspeccion
                 If textScaneo.Text.ToUpper = "DEFECTO" Then
                     checkDefecto.Checked = True
                     textScaneo.Text = ""
+                    Exit Sub
                 End If
 
 

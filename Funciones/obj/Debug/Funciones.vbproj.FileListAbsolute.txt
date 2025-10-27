@@ -6,3 +6,11 @@ C:\Users\victor.avalos\documents\visual studio 2013\Projects\ERP_PC\Funciones\ob
 C:\Users\victor.avalos\documents\visual studio 2013\Projects\ERP_PC\Funciones\obj\Debug\Funciones.dll
 C:\Users\victor.avalos\documents\visual studio 2013\Projects\ERP_PC\Funciones\obj\Debug\Funciones.xml
 C:\Users\victor.avalos\documents\visual studio 2013\Projects\ERP_PC\Funciones\obj\Debug\Funciones.pdb
+C:\Users\victor.avalos\Desktop\RAV4\RPA\ERP_PC\Funciones\bin\Debug\Funciones.dll
+C:\Users\victor.avalos\Desktop\RAV4\RPA\ERP_PC\Funciones\bin\Debug\Funciones.pdb
+C:\Users\victor.avalos\Desktop\RAV4\RPA\ERP_PC\Funciones\bin\Debug\Funciones.xml
+C:\Users\victor.avalos\Desktop\RAV4\RPA\ERP_PC\Funciones\obj\Debug\Funciones.Resources.resources
+C:\Users\victor.avalos\Desktop\RAV4\RPA\ERP_PC\Funciones\obj\Debug\Funciones.vbproj.GenerateResource.Cache
+C:\Users\victor.avalos\Desktop\RAV4\RPA\ERP_PC\Funciones\obj\Debug\Funciones.dll
+C:\Users\victor.avalos\Desktop\RAV4\RPA\ERP_PC\Funciones\obj\Debug\Funciones.xml
+C:\Users\victor.avalos\Desktop\RAV4\RPA\ERP_PC\Funciones\obj\Debug\Funciones.pdb

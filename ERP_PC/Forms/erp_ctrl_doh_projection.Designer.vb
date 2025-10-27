@@ -172,7 +172,7 @@ Partial Class erp_ctrl_doh_projection
         Me.SimpleButton2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.SimpleButton2.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SimpleButton2.Appearance.Options.UseFont = True
-        Me.SimpleButton2.Image = Global.ERP_PC.My.Resources.Resources.icons8_análisis_mecanico_30
+        Me.SimpleButton2.Image = Global.WGPL_REINSPECTION.My.Resources.Resources.icons8_análisis_mecanico_30
         Me.SimpleButton2.Location = New System.Drawing.Point(447, 24)
         Me.SimpleButton2.Name = "SimpleButton2"
         Me.SimpleButton2.Size = New System.Drawing.Size(230, 35)
@@ -775,7 +775,7 @@ Partial Class erp_ctrl_doh_projection
         Me.SimpleButton4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.SimpleButton4.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SimpleButton4.Appearance.Options.UseFont = True
-        Me.SimpleButton4.Image = Global.ERP_PC.My.Resources.Resources.icons8_guardar_30
+        Me.SimpleButton4.Image = Global.WGPL_REINSPECTION.My.Resources.Resources.icons8_guardar_30
         Me.SimpleButton4.Location = New System.Drawing.Point(783, 215)
         Me.SimpleButton4.Name = "SimpleButton4"
         Me.SimpleButton4.Size = New System.Drawing.Size(142, 34)
@@ -831,7 +831,7 @@ Partial Class erp_ctrl_doh_projection
         Me.SimpleButton9.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.SimpleButton9.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SimpleButton9.Appearance.Options.UseFont = True
-        Me.SimpleButton9.Image = Global.ERP_PC.My.Resources.Resources.icons8_lupa_24
+        Me.SimpleButton9.Image = Global.WGPL_REINSPECTION.My.Resources.Resources.icons8_lupa_24
         Me.SimpleButton9.Location = New System.Drawing.Point(506, 13)
         Me.SimpleButton9.Name = "SimpleButton9"
         Me.SimpleButton9.Size = New System.Drawing.Size(134, 32)

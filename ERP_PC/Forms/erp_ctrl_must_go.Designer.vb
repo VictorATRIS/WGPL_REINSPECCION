@@ -293,7 +293,7 @@ Partial Class erp_ctrl_must_go
         Me.SimpleButton12.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.SimpleButton12.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SimpleButton12.Appearance.Options.UseFont = True
-        Me.SimpleButton12.Image = Global.ERP_PC.My.Resources.Resources.icons8_salir_sin_actualizar_16
+        Me.SimpleButton12.Image = Global.WGPL_REINSPECTION.My.Resources.Resources.icons8_salir_sin_actualizar_16
         Me.SimpleButton12.Location = New System.Drawing.Point(827, 417)
         Me.SimpleButton12.Name = "SimpleButton12"
         Me.SimpleButton12.Size = New System.Drawing.Size(139, 38)
@@ -305,7 +305,7 @@ Partial Class erp_ctrl_must_go
         Me.SimpleButton11.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.SimpleButton11.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SimpleButton11.Appearance.Options.UseFont = True
-        Me.SimpleButton11.Image = Global.ERP_PC.My.Resources.Resources.icons8_guardar_30
+        Me.SimpleButton11.Image = Global.WGPL_REINSPECTION.My.Resources.Resources.icons8_guardar_30
         Me.SimpleButton11.Location = New System.Drawing.Point(1288, 417)
         Me.SimpleButton11.Name = "SimpleButton11"
         Me.SimpleButton11.Size = New System.Drawing.Size(119, 34)
@@ -361,7 +361,7 @@ Partial Class erp_ctrl_must_go
         Me.SimpleButton4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.SimpleButton4.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SimpleButton4.Appearance.Options.UseFont = True
-        Me.SimpleButton4.Image = Global.ERP_PC.My.Resources.Resources.icons8_de_acuerdo_30
+        Me.SimpleButton4.Image = Global.WGPL_REINSPECTION.My.Resources.Resources.icons8_de_acuerdo_30
         Me.SimpleButton4.Location = New System.Drawing.Point(1138, 417)
         Me.SimpleButton4.Name = "SimpleButton4"
         Me.SimpleButton4.Size = New System.Drawing.Size(119, 34)
@@ -373,7 +373,7 @@ Partial Class erp_ctrl_must_go
         Me.SimpleButton3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.SimpleButton3.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SimpleButton3.Appearance.Options.UseFont = True
-        Me.SimpleButton3.Image = Global.ERP_PC.My.Resources.Resources.icons8_eliminar_papelera_24
+        Me.SimpleButton3.Image = Global.WGPL_REINSPECTION.My.Resources.Resources.icons8_eliminar_papelera_24
         Me.SimpleButton3.Location = New System.Drawing.Point(988, 417)
         Me.SimpleButton3.Name = "SimpleButton3"
         Me.SimpleButton3.Size = New System.Drawing.Size(119, 34)
@@ -469,7 +469,7 @@ Partial Class erp_ctrl_must_go
         Me.SimpleButton2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.SimpleButton2.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SimpleButton2.Appearance.Options.UseFont = True
-        Me.SimpleButton2.Image = Global.ERP_PC.My.Resources.Resources.icons8_añadir_48
+        Me.SimpleButton2.Image = Global.WGPL_REINSPECTION.My.Resources.Resources.icons8_añadir_48
         Me.SimpleButton2.Location = New System.Drawing.Point(97, 356)
         Me.SimpleButton2.Name = "SimpleButton2"
         Me.SimpleButton2.Size = New System.Drawing.Size(136, 48)

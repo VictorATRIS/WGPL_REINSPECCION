@@ -935,7 +935,7 @@ Partial Class erp_ctrl_generar_sews_part
         Me.btn_guardar.Appearance.Font = New System.Drawing.Font("Tahoma", 10.25!)
         Me.btn_guardar.Appearance.Options.UseFont = True
         Me.btn_guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btn_guardar.Image = Global.ERP_PC.My.Resources.Resources.icons8_guardar_301
+        Me.btn_guardar.Image = Global.WGPL_REINSPECTION.My.Resources.Resources.icons8_guardar_301
         Me.btn_guardar.Location = New System.Drawing.Point(769, 279)
         Me.btn_guardar.Name = "btn_guardar"
         Me.btn_guardar.Size = New System.Drawing.Size(158, 41)
@@ -946,7 +946,7 @@ Partial Class erp_ctrl_generar_sews_part
         '
         Me.btn_confirmar.Appearance.Font = New System.Drawing.Font("Tahoma", 10.25!)
         Me.btn_confirmar.Appearance.Options.UseFont = True
-        Me.btn_confirmar.Image = Global.ERP_PC.My.Resources.Resources.icons8_de_acuerdo_30
+        Me.btn_confirmar.Image = Global.WGPL_REINSPECTION.My.Resources.Resources.icons8_de_acuerdo_30
         Me.btn_confirmar.Location = New System.Drawing.Point(428, 279)
         Me.btn_confirmar.Name = "btn_confirmar"
         Me.btn_confirmar.Size = New System.Drawing.Size(163, 41)
@@ -957,7 +957,7 @@ Partial Class erp_ctrl_generar_sews_part
         '
         Me.btn_combo.Appearance.Font = New System.Drawing.Font("Tahoma", 10.25!)
         Me.btn_combo.Appearance.Options.UseFont = True
-        Me.btn_combo.Image = Global.ERP_PC.My.Resources.Resources.icons8_añadir_48
+        Me.btn_combo.Image = Global.WGPL_REINSPECTION.My.Resources.Resources.icons8_añadir_48
         Me.btn_combo.Location = New System.Drawing.Point(24, 393)
         Me.btn_combo.Name = "btn_combo"
         Me.btn_combo.Size = New System.Drawing.Size(185, 49)
@@ -968,7 +968,7 @@ Partial Class erp_ctrl_generar_sews_part
         '
         Me.btn_smhxls.Appearance.Font = New System.Drawing.Font("Tahoma", 10.25!)
         Me.btn_smhxls.Appearance.Options.UseFont = True
-        Me.btn_smhxls.Image = Global.ERP_PC.My.Resources.Resources.icons8_añadir_48
+        Me.btn_smhxls.Image = Global.WGPL_REINSPECTION.My.Resources.Resources.icons8_añadir_48
         Me.btn_smhxls.Location = New System.Drawing.Point(24, 322)
         Me.btn_smhxls.Name = "btn_smhxls"
         Me.btn_smhxls.Size = New System.Drawing.Size(185, 50)
@@ -979,7 +979,7 @@ Partial Class erp_ctrl_generar_sews_part
         '
         Me.btn_customer.Appearance.Font = New System.Drawing.Font("Tahoma", 10.25!)
         Me.btn_customer.Appearance.Options.UseFont = True
-        Me.btn_customer.Image = Global.ERP_PC.My.Resources.Resources.icons8_añadir_48
+        Me.btn_customer.Image = Global.WGPL_REINSPECTION.My.Resources.Resources.icons8_añadir_48
         Me.btn_customer.Location = New System.Drawing.Point(24, 25)
         Me.btn_customer.Name = "btn_customer"
         Me.btn_customer.Size = New System.Drawing.Size(185, 46)
@@ -990,7 +990,7 @@ Partial Class erp_ctrl_generar_sews_part
         '
         Me.btn_vehiculo.Appearance.Font = New System.Drawing.Font("Tahoma", 10.25!)
         Me.btn_vehiculo.Appearance.Options.UseFont = True
-        Me.btn_vehiculo.Image = Global.ERP_PC.My.Resources.Resources.icons8_añadir_48
+        Me.btn_vehiculo.Image = Global.WGPL_REINSPECTION.My.Resources.Resources.icons8_añadir_48
         Me.btn_vehiculo.Location = New System.Drawing.Point(24, 244)
         Me.btn_vehiculo.Name = "btn_vehiculo"
         Me.btn_vehiculo.Size = New System.Drawing.Size(185, 52)
@@ -1001,7 +1001,7 @@ Partial Class erp_ctrl_generar_sews_part
         '
         Me.btn_linea.Appearance.Font = New System.Drawing.Font("Tahoma", 10.25!)
         Me.btn_linea.Appearance.Options.UseFont = True
-        Me.btn_linea.Image = Global.ERP_PC.My.Resources.Resources.icons8_añadir_48
+        Me.btn_linea.Image = Global.WGPL_REINSPECTION.My.Resources.Resources.icons8_añadir_48
         Me.btn_linea.Location = New System.Drawing.Point(24, 97)
         Me.btn_linea.Name = "btn_linea"
         Me.btn_linea.Size = New System.Drawing.Size(185, 49)
@@ -1012,7 +1012,7 @@ Partial Class erp_ctrl_generar_sews_part
         '
         Me.btn_type.Appearance.Font = New System.Drawing.Font("Tahoma", 10.25!)
         Me.btn_type.Appearance.Options.UseFont = True
-        Me.btn_type.Image = Global.ERP_PC.My.Resources.Resources.icons8_añadir_48
+        Me.btn_type.Image = Global.WGPL_REINSPECTION.My.Resources.Resources.icons8_añadir_48
         Me.btn_type.Location = New System.Drawing.Point(24, 167)
         Me.btn_type.Name = "btn_type"
         Me.btn_type.Size = New System.Drawing.Size(185, 54)

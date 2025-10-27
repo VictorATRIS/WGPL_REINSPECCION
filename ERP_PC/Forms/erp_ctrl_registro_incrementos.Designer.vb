@@ -147,7 +147,7 @@ Partial Class erp_ctrl_registro_incrementos
         '
         Me.btn_guardar.Appearance.Font = New System.Drawing.Font("Tahoma", 10.25!)
         Me.btn_guardar.Appearance.Options.UseFont = True
-        Me.btn_guardar.Image = Global.ERP_PC.My.Resources.Resources.icons8_guardar_30
+        Me.btn_guardar.Image = Global.WGPL_REINSPECTION.My.Resources.Resources.icons8_guardar_30
         Me.btn_guardar.Location = New System.Drawing.Point(275, 382)
         Me.btn_guardar.Name = "btn_guardar"
         Me.btn_guardar.Size = New System.Drawing.Size(201, 38)

@@ -352,7 +352,7 @@ Partial Class erp_main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.ERP_PC.My.Resources.Resources.Car_Electrical_System
+        Me.BackgroundImage = Global.WGPL_REINSPECTION.My.Resources.Resources.Car_Electrical_System
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1613, 920)
         Me.Controls.Add(Me.main_menu)

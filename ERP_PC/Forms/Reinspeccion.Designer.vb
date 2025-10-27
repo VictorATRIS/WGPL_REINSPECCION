@@ -38,6 +38,7 @@ Partial Class Reinspeccion
         Me.GroupControl8 = New DevExpress.XtraEditors.GroupControl()
         Me.Lbl_Title = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.checkImprimir = New System.Windows.Forms.CheckBox()
         Me.labColor = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -69,7 +70,6 @@ Partial Class Reinspeccion
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.imprimirQR = New System.Drawing.Printing.PrintDocument()
-        Me.checkImprimir = New System.Windows.Forms.CheckBox()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.XtraTabPage4.SuspendLayout()
         CType(Me.GroupControl7, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -333,6 +333,19 @@ Partial Class Reinspeccion
         Me.GroupBox3.TabIndex = 12
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Datos de la familia"
+        '
+        'checkImprimir
+        '
+        Me.checkImprimir.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.checkImprimir.AutoSize = True
+        Me.checkImprimir.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.checkImprimir.Location = New System.Drawing.Point(132, 248)
+        Me.checkImprimir.Name = "checkImprimir"
+        Me.checkImprimir.Size = New System.Drawing.Size(228, 29)
+        Me.checkImprimir.TabIndex = 225
+        Me.checkImprimir.Text = "Habilitar Impresion"
+        Me.checkImprimir.UseVisualStyleBackColor = True
         '
         'labColor
         '
@@ -690,19 +703,6 @@ Partial Class Reinspeccion
         '
         'imprimirQR
         '
-        '
-        'checkImprimir
-        '
-        Me.checkImprimir.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.checkImprimir.AutoSize = True
-        Me.checkImprimir.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.checkImprimir.Location = New System.Drawing.Point(132, 248)
-        Me.checkImprimir.Name = "checkImprimir"
-        Me.checkImprimir.Size = New System.Drawing.Size(228, 29)
-        Me.checkImprimir.TabIndex = 225
-        Me.checkImprimir.Text = "Habilitar Impresion"
-        Me.checkImprimir.UseVisualStyleBackColor = True
         '
         'Reinspeccion
         '
