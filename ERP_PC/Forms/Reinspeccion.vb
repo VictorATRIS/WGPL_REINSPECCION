@@ -31,12 +31,18 @@ Public Class Reinspeccion
                 sql = "select PRETTYNAME from erp_aaids_colabora where cb_codigo = '" & resultadoFinal & "'"
                 If Existe_Dato(sql, var_conexionERP) Then
                     labNumReloj.Text = Consulta_Dato(sql, var_conexionERP)
-                    textSerial.Focus()
+                    If Not validaMaster Then
+                        textSerial.Focus()
+                    Else
+                        textMaster.Focus()
+                    End If
+
                     textNumReloj.Text = resultadoFinal
                 Else
                     textNumReloj.Focus()
                     labNumReloj.Text = ""
                     DevExpress.XtraEditors.XtraMessageBox.Show("Numero de empleado no encontrado", "Reinspeccion", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                    textMaster.Text = ""
                     textSerial.Text = ""
                 End If
             Catch ex As Exception
@@ -63,16 +69,37 @@ Public Class Reinspeccion
 
 
     Private Sub Reinspeccion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        var_conexionERP = DesencriptaCadenaConexionERP(ConfigurationManager.ConnectionStrings("ERP_cnn").ConnectionString)
-        var_IP_mailserver = ConfigurationManager.AppSettings("IP_Mail_server")
-        var_adm_Planta = ConfigurationManager.AppSettings("erp_plant")
-        'System.Diagnostics.Process.Start("DateFormat.exe")
-        Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US")
-        Thread.CurrentThread.CurrentCulture.DateTimeFormat.DateSeparator = "/"
-        Thread.CurrentThread.CurrentCulture.DateTimeFormat.ShortDatePattern = "MM/dd/yyyy"
-        checkImprimir.Checked = True
+        Try
+
+            var_conexionERP = DesencriptaCadenaConexionERP(ConfigurationManager.ConnectionStrings("ERP_cnn").ConnectionString)
+            var_IP_mailserver = ConfigurationManager.AppSettings("IP_Mail_server")
+            var_adm_Planta = ConfigurationManager.AppSettings("erp_plant")
+            'System.Diagnostics.Process.Start("DateFormat.exe")
+            Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US")
+            Thread.CurrentThread.CurrentCulture.DateTimeFormat.DateSeparator = "/"
+            Thread.CurrentThread.CurrentCulture.DateTimeFormat.ShortDatePattern = "MM/dd/yyyy"
+            checkImprimir.Checked = True
+            checkMaster.Checked = True
+
+            comboSortId.Properties.DataSource = Nothing
+            comboSortId.Refresh()
 
 
+            sql = "Select SortRequest_Id from ERP_CTRL_WGPL_SORT_REQUEST where SortRequest_Id not in (select SortRequestId from ERP_CTRL_WGPL_SORT_GROUP)"
+            ds = Consulta_Datos(sql, var_conexionERP)
+            comboSortId.Properties.DisplayMember = "SortRequest_Id"
+            comboSortId.Properties.ValueMember = "SortRequest_Id"
+            comboSortId.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard
+            comboSortId.Properties.DataSource = ds.Tables(0)
+            comboSortId.Refresh()
+
+            actualizaTotales()
+
+
+        Catch ex As Exception
+            DevExpress.XtraEditors.XtraMessageBox.Show(ex.Message, "Reinspección", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+     
 
     End Sub
 
@@ -88,16 +115,52 @@ Public Class Reinspeccion
         labColor.Visible = False
 
         If labNumReloj.Text = "" Then
-            DevExpress.XtraEditors.XtraMessageBox.Show("El numero de reloj es incorrecto", "Consulta", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            DevExpress.XtraEditors.XtraMessageBox.Show("El numero de reloj es incorrecto", "Consulta", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Exit Sub
         End If
+
+        If validaMaster Then
+            If textMaster.Text = "" Then
+                DevExpress.XtraEditors.XtraMessageBox.Show("Ingresa el Master ", "Consulta", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Exit Sub
+            End If
+
+        End If
+
         Try
             If e.KeyCode = Keys.Enter Then
                 checkedCombo.Properties.DataSource = Nothing
                 checkedCombo.Refresh()
-                sql = "select distinct d.SortRequest_Id from ERP_CTRL_WGPL_SORT_REQUEST_DT d" &
-                    " join ERP_CTRL_WGPL_SORT_REQUEST r on r.SortRequest_Id = d.SortRequest_Id " &
-                       " WHERE Serial_no = '" & textSerial.Text.Trim.Substring(1) & "' and statusRequest = '2' and d.master in (select master from ERP_CTRL_WGPL_LOCATIONS_QA) "
+                If textSerial.Text.Trim = "" Then
+                    Exit Sub
+                End If
+
+                sql = "select serial_Box from ERP_CTRL_WGPL_SERIALES_REWORK where serial_box = '" & textSerial.Text.Trim.Substring(1) & "'"
+
+                If Not Existe_Dato(sql, var_conexionERP) And Not validaMaster Then
+                    validaMaster = True
+                    checkMaster.Checked = True
+                    DevExpress.XtraEditors.XtraMessageBox.Show("Este Serial no es de Retorno", "Consulta", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                End If
+
+                If validaMaster Then
+
+                    sql = "SP_CTRL_WGPL_VALIDA_MASTER_BOX '" & textMaster.Text.Trim.Substring(2) & "','" & textSerial.Text.Trim.Substring(1) & "'"
+
+                    If Not Existe_Dato(sql, var_conexionERP) Then
+                        DevExpress.XtraEditors.XtraMessageBox.Show("Este Serial no pertenece a este master ", "Consulta", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                        checkedCombo.Properties.DataSource = Nothing
+                        checkedCombo.Refresh()
+                        limpiarCampos()
+                        labColor.Visible = False
+                        textMaster.Text = ""
+                        textSerial.Text = ""
+                        labBox.Text = "0"
+                        Exit Sub
+                    End If
+
+                End If
+                sql = "SP_CTRL_WGPL_GET_SORTINGS_BY_BOX '" & textSerial.Text.Trim & "'"
                 ds = Consulta_Datos(sql, var_conexionERP)
 
                 ' Configurar propiedades del combo
@@ -123,10 +186,7 @@ Public Class Reinspeccion
 
 
 
-                sql = "SELECT TOP 1 d.SortRequest_Id, d.PRODUCT_NO, d.Serial_no, d.Qty, d.Master " &
-                      "FROM ERP_CTRL_WGPL_SORT_REQUEST_DT d " &
-                      "JOIN ERP_CTRL_WGPL_SORT_REQUEST r ON r.SortRequest_Id = d.SortRequest_Id " &
-                      "WHERE d.Serial_no = '" & textSerial.Text.Trim.Substring(1) & "' and statusRequest IN( '2' ,'99') and d.master in (select master from ERP_CTRL_WGPL_LOCATIONS_QA) "
+                sql = "SP_CTRL_WGPL_GET_INFO_BY_BOX '" & textSerial.Text.Trim & "'"
                 ds = Consulta_Datos(sql, var_conexionERP)
 
                 If ds IsNot Nothing And ds.Tables.Count > 0 And ds.Tables(0).Rows.Count > 0 Then
@@ -305,10 +365,16 @@ Public Class Reinspeccion
                         cargarStatus()
                         checkDefecto.Checked = False
                         textScaneo.Text = ""
+                        textSerial.Focus()
+
+                        'limpiarCampos()
+
+
                         sql = "SP_CTRL_WGPL_SORT_REQUEST_PENDIENTES_CAJA '" & textSerial.Text.Trim.Substring(1) & "'"
+                        textSerial.Text = ""
                         If Existe_Dato(sql, var_conexionERP) Then
                             Exit Sub
-
+                            labColor.Visible = True
                         Else
                             checkedCombo.Properties.DataSource = Nothing
                             checkedCombo.Refresh()
@@ -320,6 +386,7 @@ Public Class Reinspeccion
                             textSerial.Focus()
                             textSerial.Text = ""
                             labColor.Visible = True
+                            Exit Sub
                         End If
 
                     Else
@@ -343,7 +410,11 @@ Public Class Reinspeccion
                 textScaneo.Text = ""
 
                 sql = "SP_CTRL_WGPL_SORT_REQUEST_PENDIENTES_CAJA '" & textSerial.Text.Trim.Substring(1) & "'"
+               
                 If Existe_Dato(sql, var_conexionERP) Then
+                    textSerial.Text = ""
+                    textSerial.Focus()
+                    actualizaTotales()
                     Exit Sub
 
                 Else
@@ -357,6 +428,8 @@ Public Class Reinspeccion
                     textSerial.Focus()
                     textSerial.Text = ""
                     labColor.Visible = True
+                    actualizaTotales()
+
 
                 End If
             End If
@@ -366,6 +439,30 @@ Public Class Reinspeccion
             DevExpress.XtraEditors.XtraMessageBox.Show(ex.Message, "Reinspeccion", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
 
+    End Sub
+    Private Sub actualizaTotales()
+        Try
+            sql = "SP_CTRL_WGPL_GET_TOTAL_REINSPECCION"
+            ds = Consulta_Datos(sql, var_conexionERP)
+
+            Dim dt As DataTable = ds.Tables(0)
+
+            If dt.Rows.Count > 0 Then
+                Dim row As DataRow = dt.Rows(0)
+
+                labTotal.Text = row("Total").ToString()
+                labTotal2.Text = row("Total").ToString()
+                labGood.Text = row("Good").ToString()
+                labGood2.Text = row("Good").ToString()
+                labNG.Text = row("NoGood").ToString()
+                labNG2.Text = row("NoGood").ToString()
+
+            End If
+
+
+        Catch ex As Exception
+            DevExpress.XtraEditors.XtraMessageBox.Show(ex.Message, "Reinspeccion", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
     End Sub
     Private Sub gv_arnes_RowCellStyle(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowCellStyleEventArgs) Handles gv_arnes.RowCellStyle
         Dim view As DevExpress.XtraGrid.Views.Grid.GridView = CType(sender, DevExpress.XtraGrid.Views.Grid.GridView)
@@ -501,11 +598,13 @@ Public Class Reinspeccion
             gc_datosRequest.DataSource = Nothing
             gv_datosRequest.Columns.Clear()
 
-            sql = "SP_CTRL_WGPL_CONSULTA_DATOS_SORT_REQUEST"
+            sql = "SP_CTRL_WGPL_CONSULTA_DATOS_SORT_REQUEST '" & dateIni.Text & "', '" & dateFin.Text & "'"
             ds = Consulta_Datos(sql, var_conexionERP)
 
             gc_datosRequest.DataSource = ds.Tables(0)
             gv_datosRequest.BestFitColumns()
+            actualizaTotales()
+
 
 
         Catch ex As Exception
@@ -541,5 +640,129 @@ Public Class Reinspeccion
 
         gv_datosRequest.ExportToXlsx(Environment.GetFolderPath(Environment.SpecialFolder.Personal) & "\reporteSortRequest.xlsx")
         System.Diagnostics.Process.Start(Environment.GetFolderPath(Environment.SpecialFolder.Personal) & "\reporteSortRequest.xlsx")
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Try
+            Dim seleccionados = comboSortId.Properties.GetCheckedItems()
+            If seleccionados.ToString = "" Then
+                DevExpress.XtraEditors.XtraMessageBox.Show("Seleccione los Sorteos que va agrupar", "Reinspección", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Exit Sub
+            End If
+
+            If Trim(textGrupo.Text) = "" Then
+                DevExpress.XtraEditors.XtraMessageBox.Show("Porfavor Asigne el nombre del Grupo", "Reinspección", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Exit Sub
+            End If
+
+            Dim ids() As String = seleccionados.Split(","c)
+
+            sql = "SP_CTRL_WGPL_VALIDA_SORT_SAME_FAMILY '" & seleccionados & "'"
+            Dim total As Integer = Integer.Parse(Consulta_Dato(sql, var_conexionERP))
+
+            If total > 1 Then
+                DevExpress.XtraEditors.XtraMessageBox.Show("No puedes Agrupar Dos familias diferentes", "Reinspección", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Exit Sub
+            End If
+
+            For Each id As String In ids
+                id = id.Trim()
+
+                Dim sql As String = "INSERT INTO ERP_CTRL_WGPL_SORT_GROUP " &
+                                    " VALUES ('" & textGrupo.Text & "', '" & id & "', GETDATE())"
+                Executa_Query(sql, var_conexionERP)
+
+            Next
+
+            DevExpress.XtraEditors.XtraMessageBox.Show("Los datos se guardaron correctamente", "Reinspección", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+            comboSortId.Properties.Items.BeginUpdate()
+            Try
+                For i As Integer = 0 To comboSortId.Properties.Items.Count - 1
+                    comboSortId.Properties.Items(i).CheckState = CheckState.Unchecked
+                Next
+            Finally
+                comboSortId.Properties.Items.EndUpdate()
+            End Try
+
+            comboSortId.EditValue = Nothing
+            comboSortId.Text = ""
+
+
+            sql = "Select SortRequest_Id from ERP_CTRL_WGPL_SORT_REQUEST where SortRequest_Id not in (select SortRequestId from ERP_CTRL_WGPL_SORT_GROUP)"
+            ds = Consulta_Datos(sql, var_conexionERP)
+            comboSortId.Properties.DisplayMember = "SortRequest_Id"
+            comboSortId.Properties.ValueMember = "SortRequest_Id"
+            comboSortId.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard
+            comboSortId.Properties.DataSource = ds.Tables(0)
+            comboSortId.Refresh()
+
+            textGrupo.Text = ""
+        Catch ex As Exception
+            DevExpress.XtraEditors.XtraMessageBox.Show(ex.Message, "Reinspeccion", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
+ 
+    Private Sub textMaster_KeyDown(sender As Object, e As KeyEventArgs) Handles textMaster.KeyDown
+        Try
+            If e.KeyCode = Keys.Enter Then
+                labBox.Text = "0"
+                sql = "select master from ERP_CTRL_WGPL_LOCATIONS_QA where master = '" & textMaster.Text.Trim.Substring(2) & "'"
+
+                If Not Existe_Dato(sql, var_conexionERP) Then
+                    DevExpress.XtraEditors.XtraMessageBox.Show("No se ha registrado la entrada a QA", "Reinspeccion", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                    textMaster.Text = ""
+                    textMaster.Focus()
+
+                    Exit Sub
+                End If
+
+                labBox.Text = Consulta_Dato("SP_CTRL_WGPL_GET_BOX_QTY_FOR_MASTER '" & textMaster.Text.Trim.Substring(2) & "'", var_conexionERP)
+                textSerial.Focus()
+            End If
+        Catch ex As Exception
+            DevExpress.XtraEditors.XtraMessageBox.Show(ex.Message, "Reinspeccion", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Try
+            gc_inventory.DataSource = Nothing
+            gv_inventory.Columns.Clear()
+
+            sql = "SP_CTRL_WGPL_INVENTORY_VS_WGPL"
+            ds = Consulta_Datos(sql, var_conexionERP)
+
+            gc_inventory.DataSource = ds.Tables(0)
+            gv_inventory.BestFitColumns()
+
+
+        Catch ex As Exception
+            DevExpress.XtraEditors.XtraMessageBox.Show(ex.Message, "Reinspeccion", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+
+        gv_inventory.ExportToXlsx(Environment.GetFolderPath(Environment.SpecialFolder.Personal) & "\PhysicalInventory.xlsx")
+        System.Diagnostics.Process.Start(Environment.GetFolderPath(Environment.SpecialFolder.Personal) & "\PhysicalInventory.xlsx")
+    End Sub
+
+    Private Sub Label17_Click(sender As Object, e As EventArgs) Handles labGood.Click
+
+    End Sub
+    Private validaMaster As Boolean = True
+    Private Sub checkMaster_CheckedChanged(sender As Object, e As EventArgs) Handles checkMaster.CheckedChanged
+        If Not checkMaster.Checked Then
+            validaMaster = False
+            textSerial.Focus()
+
+        Else
+            validaMaster = True
+            textMaster.Focus()
+        End If
+
+
     End Sub
 End Class

@@ -38,6 +38,16 @@ Partial Class Reinspeccion
         Me.GroupControl8 = New DevExpress.XtraEditors.GroupControl()
         Me.Lbl_Title = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.checkMaster = New System.Windows.Forms.CheckBox()
+        Me.labNG = New System.Windows.Forms.Label()
+        Me.labGood = New System.Windows.Forms.Label()
+        Me.labTotal = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.textTotal = New System.Windows.Forms.Label()
+        Me.labBox = New System.Windows.Forms.Label()
+        Me.textMaster = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.checkImprimir = New System.Windows.Forms.CheckBox()
         Me.labColor = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -67,8 +77,36 @@ Partial Class Reinspeccion
         Me.gv_datosRequest = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.GridView5 = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.dateFin = New DevExpress.XtraEditors.DateEdit()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.dateIni = New DevExpress.XtraEditors.DateEdit()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.labNG2 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.labGood2 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.labTotal2 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.XtraTabPage2 = New DevExpress.XtraTab.XtraTabPage()
+        Me.GroupControl2 = New DevExpress.XtraEditors.GroupControl()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.comboSortId = New DevExpress.XtraEditors.CheckedComboBoxEdit()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.textGrupo = New System.Windows.Forms.TextBox()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.XtraTabPage3 = New DevExpress.XtraTab.XtraTabPage()
+        Me.GroupControl3 = New DevExpress.XtraEditors.GroupControl()
+        Me.gc_inventory = New DevExpress.XtraGrid.GridControl()
+        Me.gv_inventory = New DevExpress.XtraGrid.Views.Grid.GridView()
+        Me.GridView6 = New DevExpress.XtraGrid.Views.Grid.GridView()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.imprimirQR = New System.Drawing.Printing.PrintDocument()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.XtraTabPage4.SuspendLayout()
@@ -95,6 +133,23 @@ Partial Class Reinspeccion
         CType(Me.gv_datosRequest, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
+        CType(Me.dateFin.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dateFin.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dateIni.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dateIni.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox5.SuspendLayout()
+        Me.XtraTabPage2.SuspendLayout()
+        CType(Me.GroupControl2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl2.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
+        CType(Me.comboSortId.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.XtraTabPage3.SuspendLayout()
+        CType(Me.GroupControl3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl3.SuspendLayout()
+        CType(Me.gc_inventory, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.gv_inventory, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridView6, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'GridView1
@@ -304,6 +359,16 @@ Partial Class Reinspeccion
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.checkMaster)
+        Me.GroupBox3.Controls.Add(Me.labNG)
+        Me.GroupBox3.Controls.Add(Me.labGood)
+        Me.GroupBox3.Controls.Add(Me.labTotal)
+        Me.GroupBox3.Controls.Add(Me.Label12)
+        Me.GroupBox3.Controls.Add(Me.Label10)
+        Me.GroupBox3.Controls.Add(Me.textTotal)
+        Me.GroupBox3.Controls.Add(Me.labBox)
+        Me.GroupBox3.Controls.Add(Me.textMaster)
+        Me.GroupBox3.Controls.Add(Me.Label8)
         Me.GroupBox3.Controls.Add(Me.checkImprimir)
         Me.GroupBox3.Controls.Add(Me.labColor)
         Me.GroupBox3.Controls.Add(Me.Button2)
@@ -333,6 +398,122 @@ Partial Class Reinspeccion
         Me.GroupBox3.TabIndex = 12
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Datos de la familia"
+        '
+        'checkMaster
+        '
+        Me.checkMaster.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.checkMaster.AutoSize = True
+        Me.checkMaster.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.checkMaster.Location = New System.Drawing.Point(10, 116)
+        Me.checkMaster.Name = "checkMaster"
+        Me.checkMaster.Size = New System.Drawing.Size(176, 29)
+        Me.checkMaster.TabIndex = 235
+        Me.checkMaster.Text = "Valida Master"
+        Me.checkMaster.UseVisualStyleBackColor = True
+        '
+        'labNG
+        '
+        Me.labNG.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labNG.AutoSize = True
+        Me.labNG.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labNG.ForeColor = System.Drawing.Color.Crimson
+        Me.labNG.Location = New System.Drawing.Point(1479, 247)
+        Me.labNG.Name = "labNG"
+        Me.labNG.Size = New System.Drawing.Size(21, 29)
+        Me.labNG.TabIndex = 234
+        Me.labNG.Text = "/"
+        '
+        'labGood
+        '
+        Me.labGood.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labGood.AutoSize = True
+        Me.labGood.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labGood.ForeColor = System.Drawing.Color.Green
+        Me.labGood.Location = New System.Drawing.Point(1303, 248)
+        Me.labGood.Name = "labGood"
+        Me.labGood.Size = New System.Drawing.Size(21, 29)
+        Me.labGood.TabIndex = 233
+        Me.labGood.Text = "/"
+        '
+        'labTotal
+        '
+        Me.labTotal.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labTotal.AutoSize = True
+        Me.labTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labTotal.ForeColor = System.Drawing.Color.Blue
+        Me.labTotal.Location = New System.Drawing.Point(1134, 250)
+        Me.labTotal.Name = "labTotal"
+        Me.labTotal.Size = New System.Drawing.Size(21, 29)
+        Me.labTotal.TabIndex = 232
+        Me.labTotal.Text = "/"
+        '
+        'Label12
+        '
+        Me.Label12.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(1430, 249)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(52, 25)
+        Me.Label12.TabIndex = 231
+        Me.Label12.Text = "NG:"
+        '
+        'Label10
+        '
+        Me.Label10.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(1226, 251)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(75, 25)
+        Me.Label10.TabIndex = 230
+        Me.Label10.Text = "Good:"
+        '
+        'textTotal
+        '
+        Me.textTotal.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.textTotal.AutoSize = True
+        Me.textTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.textTotal.Location = New System.Drawing.Point(1067, 251)
+        Me.textTotal.Name = "textTotal"
+        Me.textTotal.Size = New System.Drawing.Size(72, 25)
+        Me.textTotal.TabIndex = 229
+        Me.textTotal.Text = "Total:"
+        '
+        'labBox
+        '
+        Me.labBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labBox.AutoSize = True
+        Me.labBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labBox.Location = New System.Drawing.Point(1295, 163)
+        Me.labBox.Name = "labBox"
+        Me.labBox.Size = New System.Drawing.Size(69, 73)
+        Me.labBox.TabIndex = 228
+        Me.labBox.Text = "0"
+        '
+        'textMaster
+        '
+        Me.textMaster.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.textMaster.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.textMaster.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.textMaster.Location = New System.Drawing.Point(709, 29)
+        Me.textMaster.Name = "textMaster"
+        Me.textMaster.Size = New System.Drawing.Size(273, 40)
+        Me.textMaster.TabIndex = 227
+        '
+        'Label8
+        '
+        Me.Label8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(573, 30)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(130, 37)
+        Me.Label8.TabIndex = 226
+        Me.Label8.Text = "Master:"
         '
         'checkImprimir
         '
@@ -372,7 +553,7 @@ Partial Class Reinspeccion
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(543, 256)
+        Me.Label2.Location = New System.Drawing.Point(366, 253)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(112, 20)
         Me.Label2.TabIndex = 222
@@ -393,17 +574,16 @@ Partial Class Reinspeccion
         'textScaneo
         '
         Me.textScaneo.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.textScaneo.Location = New System.Drawing.Point(665, 249)
+        Me.textScaneo.Location = New System.Drawing.Point(484, 249)
         Me.textScaneo.Name = "textScaneo"
-        Me.textScaneo.Size = New System.Drawing.Size(182, 31)
+        Me.textScaneo.Size = New System.Drawing.Size(247, 31)
         Me.textScaneo.TabIndex = 220
         '
         'checkDefecto
         '
-        Me.checkDefecto.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.checkDefecto.AutoSize = True
         Me.checkDefecto.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.checkDefecto.Location = New System.Drawing.Point(1154, 239)
+        Me.checkDefecto.Location = New System.Drawing.Point(754, 244)
         Me.checkDefecto.Name = "checkDefecto"
         Me.checkDefecto.Size = New System.Drawing.Size(308, 37)
         Me.checkDefecto.TabIndex = 219
@@ -534,11 +714,10 @@ Partial Class Reinspeccion
         '
         'textSerial
         '
-        Me.textSerial.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.textSerial.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.textSerial.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.textSerial.ForeColor = System.Drawing.SystemColors.MenuHighlight
-        Me.textSerial.Location = New System.Drawing.Point(1189, 29)
+        Me.textSerial.Location = New System.Drawing.Point(1200, 28)
         Me.textSerial.Name = "textSerial"
         Me.textSerial.Size = New System.Drawing.Size(273, 40)
         Me.textSerial.TabIndex = 148
@@ -560,8 +739,7 @@ Partial Class Reinspeccion
         '
         'Label3
         '
-        Me.Label3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(1013, 29)
@@ -588,7 +766,7 @@ Partial Class Reinspeccion
         Me.XtraTabControl1.SelectedTabPage = Me.XtraTabPage4
         Me.XtraTabControl1.Size = New System.Drawing.Size(1573, 962)
         Me.XtraTabControl1.TabIndex = 8
-        Me.XtraTabControl1.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabPage4, Me.XtraTabPage1})
+        Me.XtraTabControl1.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabPage4, Me.XtraTabPage1, Me.XtraTabPage2, Me.XtraTabPage3})
         '
         'XtraTabPage1
         '
@@ -654,6 +832,7 @@ Partial Class Reinspeccion
         Me.gv_datosRequest.Name = "gv_datosRequest"
         Me.gv_datosRequest.OptionsBehavior.Editable = False
         Me.gv_datosRequest.OptionsPrint.EnableAppearanceOddRow = True
+        Me.gv_datosRequest.OptionsSelection.MultiSelect = True
         Me.gv_datosRequest.OptionsView.EnableAppearanceEvenRow = True
         Me.gv_datosRequest.OptionsView.EnableAppearanceOddRow = True
         Me.gv_datosRequest.OptionsView.RowAutoHeight = True
@@ -669,6 +848,11 @@ Partial Class Reinspeccion
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Panel1.Controls.Add(Me.dateFin)
+        Me.Panel1.Controls.Add(Me.Label17)
+        Me.Panel1.Controls.Add(Me.dateIni)
+        Me.Panel1.Controls.Add(Me.Label16)
+        Me.Panel1.Controls.Add(Me.GroupBox5)
         Me.Panel1.Controls.Add(Me.Button3)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -677,11 +861,144 @@ Partial Class Reinspeccion
         Me.Panel1.Size = New System.Drawing.Size(1563, 80)
         Me.Panel1.TabIndex = 0
         '
+        'dateFin
+        '
+        Me.dateFin.EditValue = Nothing
+        Me.dateFin.Location = New System.Drawing.Point(735, 37)
+        Me.dateFin.Margin = New System.Windows.Forms.Padding(2)
+        Me.dateFin.Name = "dateFin"
+        Me.dateFin.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.dateFin.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
+        Me.dateFin.Properties.CalendarTimeProperties.CloseUpKey = New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.F4)
+        Me.dateFin.Properties.CalendarTimeProperties.PopupBorderStyle = DevExpress.XtraEditors.Controls.PopupBorderStyles.[Default]
+        Me.dateFin.Size = New System.Drawing.Size(140, 20)
+        Me.dateFin.TabIndex = 282
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(637, 37)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(94, 20)
+        Me.Label17.TabIndex = 281
+        Me.Label17.Text = "Fecha Fin:"
+        '
+        'dateIni
+        '
+        Me.dateIni.EditValue = Nothing
+        Me.dateIni.Location = New System.Drawing.Point(473, 37)
+        Me.dateIni.Margin = New System.Windows.Forms.Padding(2)
+        Me.dateIni.Name = "dateIni"
+        Me.dateIni.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.dateIni.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
+        Me.dateIni.Properties.CalendarTimeProperties.CloseUpKey = New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.F4)
+        Me.dateIni.Properties.CalendarTimeProperties.PopupBorderStyle = DevExpress.XtraEditors.Controls.PopupBorderStyles.[Default]
+        Me.dateIni.Size = New System.Drawing.Size(140, 20)
+        Me.dateIni.TabIndex = 280
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(380, 37)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(89, 20)
+        Me.Label16.TabIndex = 279
+        Me.Label16.Text = "Fecha Ini:"
+        '
+        'GroupBox5
+        '
+        Me.GroupBox5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox5.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.GroupBox5.Controls.Add(Me.Label19)
+        Me.GroupBox5.Controls.Add(Me.labNG2)
+        Me.GroupBox5.Controls.Add(Me.Label21)
+        Me.GroupBox5.Controls.Add(Me.labGood2)
+        Me.GroupBox5.Controls.Add(Me.Label20)
+        Me.GroupBox5.Controls.Add(Me.labTotal2)
+        Me.GroupBox5.Location = New System.Drawing.Point(1069, 3)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(454, 71)
+        Me.GroupBox5.TabIndex = 241
+        Me.GroupBox5.TabStop = False
+        Me.GroupBox5.Text = "Total del Dia"
+        '
+        'Label19
+        '
+        Me.Label19.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label19.AutoSize = True
+        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.Location = New System.Drawing.Point(368, 26)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(52, 25)
+        Me.Label19.TabIndex = 237
+        Me.Label19.Text = "NG:"
+        '
+        'labNG2
+        '
+        Me.labNG2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labNG2.AutoSize = True
+        Me.labNG2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labNG2.ForeColor = System.Drawing.Color.Crimson
+        Me.labNG2.Location = New System.Drawing.Point(417, 24)
+        Me.labNG2.Name = "labNG2"
+        Me.labNG2.Size = New System.Drawing.Size(21, 29)
+        Me.labNG2.TabIndex = 240
+        Me.labNG2.Text = "/"
+        '
+        'Label21
+        '
+        Me.Label21.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label21.AutoSize = True
+        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.Location = New System.Drawing.Point(5, 28)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(72, 25)
+        Me.Label21.TabIndex = 235
+        Me.Label21.Text = "Total:"
+        '
+        'labGood2
+        '
+        Me.labGood2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labGood2.AutoSize = True
+        Me.labGood2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labGood2.ForeColor = System.Drawing.Color.Green
+        Me.labGood2.Location = New System.Drawing.Point(241, 25)
+        Me.labGood2.Name = "labGood2"
+        Me.labGood2.Size = New System.Drawing.Size(21, 29)
+        Me.labGood2.TabIndex = 239
+        Me.labGood2.Text = "/"
+        '
+        'Label20
+        '
+        Me.Label20.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.Location = New System.Drawing.Point(164, 28)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(75, 25)
+        Me.Label20.TabIndex = 236
+        Me.Label20.Text = "Good:"
+        '
+        'labTotal2
+        '
+        Me.labTotal2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labTotal2.AutoSize = True
+        Me.labTotal2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labTotal2.ForeColor = System.Drawing.Color.Blue
+        Me.labTotal2.Location = New System.Drawing.Point(72, 27)
+        Me.labTotal2.Name = "labTotal2"
+        Me.labTotal2.Size = New System.Drawing.Size(21, 29)
+        Me.labTotal2.TabIndex = 238
+        Me.labTotal2.Text = "/"
+        '
         'Button3
         '
-        Me.Button3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Button3.Location = New System.Drawing.Point(200, 31)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(166, 31)
@@ -691,15 +1008,228 @@ Partial Class Reinspeccion
         '
         'Button1
         '
-        Me.Button1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Button1.Location = New System.Drawing.Point(9, 31)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(166, 31)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Buscar"
         Me.Button1.UseVisualStyleBackColor = True
+        '
+        'XtraTabPage2
+        '
+        Me.XtraTabPage2.Controls.Add(Me.GroupControl2)
+        Me.XtraTabPage2.Name = "XtraTabPage2"
+        Me.XtraTabPage2.Size = New System.Drawing.Size(1567, 934)
+        Me.XtraTabPage2.Text = "Agrupar Sorteos"
+        '
+        'GroupControl2
+        '
+        Me.GroupControl2.Controls.Add(Me.Label7)
+        Me.GroupControl2.Controls.Add(Me.GroupBox4)
+        Me.GroupControl2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GroupControl2.Location = New System.Drawing.Point(0, 0)
+        Me.GroupControl2.LookAndFeel.SkinName = "iMaginary"
+        Me.GroupControl2.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Office2003
+        Me.GroupControl2.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.GroupControl2.Name = "GroupControl2"
+        Me.GroupControl2.Size = New System.Drawing.Size(1567, 934)
+        Me.GroupControl2.TabIndex = 199
+        Me.GroupControl2.Text = "Sorting"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label7.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(2, 18)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(178, 29)
+        Me.Label7.TabIndex = 14
+        Me.Label7.Text = "Sorting Group"
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.Button4)
+        Me.GroupBox4.Controls.Add(Me.comboSortId)
+        Me.GroupBox4.Controls.Add(Me.Label24)
+        Me.GroupBox4.Controls.Add(Me.textGrupo)
+        Me.GroupBox4.Controls.Add(Me.Label26)
+        Me.GroupBox4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GroupBox4.Location = New System.Drawing.Point(2, 18)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(1563, 914)
+        Me.GroupBox4.TabIndex = 12
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "Datos de la familia"
+        '
+        'Button4
+        '
+        Me.Button4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.Location = New System.Drawing.Point(775, 454)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(172, 46)
+        Me.Button4.TabIndex = 223
+        Me.Button4.Text = "Guardar"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'comboSortId
+        '
+        Me.comboSortId.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.comboSortId.Location = New System.Drawing.Point(587, 396)
+        Me.comboSortId.Name = "comboSortId"
+        Me.comboSortId.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.comboSortId.Properties.Appearance.Options.UseFont = True
+        Me.comboSortId.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.comboSortId.Size = New System.Drawing.Size(520, 42)
+        Me.comboSortId.TabIndex = 221
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label24.Location = New System.Drawing.Point(327, 401)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(254, 33)
+        Me.Label24.TabIndex = 149
+        Me.Label24.Text = "Sort Request ID: "
+        '
+        'textGrupo
+        '
+        Me.textGrupo.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.textGrupo.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.textGrupo.ForeColor = System.Drawing.SystemColors.MenuHighlight
+        Me.textGrupo.Location = New System.Drawing.Point(587, 332)
+        Me.textGrupo.Name = "textGrupo"
+        Me.textGrupo.Size = New System.Drawing.Size(520, 40)
+        Me.textGrupo.TabIndex = 148
+        '
+        'Label26
+        '
+        Me.Label26.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label26.AutoSize = True
+        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label26.Location = New System.Drawing.Point(376, 335)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(195, 37)
+        Me.Label26.TabIndex = 144
+        Me.Label26.Text = "Sort Group:"
+        '
+        'XtraTabPage3
+        '
+        Me.XtraTabPage3.Controls.Add(Me.GroupControl3)
+        Me.XtraTabPage3.Name = "XtraTabPage3"
+        Me.XtraTabPage3.Size = New System.Drawing.Size(1567, 934)
+        Me.XtraTabPage3.Text = "Physical Inventory"
+        '
+        'GroupControl3
+        '
+        Me.GroupControl3.Controls.Add(Me.gc_inventory)
+        Me.GroupControl3.Controls.Add(Me.Panel2)
+        Me.GroupControl3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GroupControl3.Location = New System.Drawing.Point(0, 0)
+        Me.GroupControl3.LookAndFeel.SkinName = "iMaginary"
+        Me.GroupControl3.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Office2003
+        Me.GroupControl3.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.GroupControl3.Name = "GroupControl3"
+        Me.GroupControl3.Size = New System.Drawing.Size(1567, 934)
+        Me.GroupControl3.TabIndex = 200
+        Me.GroupControl3.Text = "Physical Inventory"
+        '
+        'gc_inventory
+        '
+        Me.gc_inventory.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.gc_inventory.Location = New System.Drawing.Point(2, 98)
+        Me.gc_inventory.MainView = Me.gv_inventory
+        Me.gc_inventory.Name = "gc_inventory"
+        Me.gc_inventory.Size = New System.Drawing.Size(1563, 834)
+        Me.gc_inventory.TabIndex = 209
+        Me.gc_inventory.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.gv_inventory, Me.GridView6})
+        '
+        'gv_inventory
+        '
+        Me.gv_inventory.Appearance.EvenRow.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(7, Byte))
+        Me.gv_inventory.Appearance.EvenRow.Options.UseFont = True
+        Me.gv_inventory.Appearance.HorzLine.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(7, Byte))
+        Me.gv_inventory.Appearance.HorzLine.Options.UseFont = True
+        Me.gv_inventory.Appearance.OddRow.BackColor = System.Drawing.Color.Transparent
+        Me.gv_inventory.Appearance.OddRow.BackColor2 = System.Drawing.Color.Transparent
+        Me.gv_inventory.Appearance.OddRow.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(7, Byte))
+        Me.gv_inventory.Appearance.OddRow.Options.UseBackColor = True
+        Me.gv_inventory.Appearance.OddRow.Options.UseFont = True
+        Me.gv_inventory.Appearance.Row.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(7, Byte))
+        Me.gv_inventory.Appearance.Row.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
+        Me.gv_inventory.Appearance.Row.Options.UseFont = True
+        Me.gv_inventory.Appearance.VertLine.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(7, Byte))
+        Me.gv_inventory.Appearance.VertLine.Options.UseFont = True
+        Me.gv_inventory.AppearancePrint.FooterPanel.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(7, Byte))
+        Me.gv_inventory.AppearancePrint.FooterPanel.Options.UseFont = True
+        Me.gv_inventory.AppearancePrint.Lines.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(7, Byte))
+        Me.gv_inventory.AppearancePrint.Lines.Options.UseFont = True
+        Me.gv_inventory.AppearancePrint.OddRow.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(7, Byte))
+        Me.gv_inventory.AppearancePrint.OddRow.Options.UseFont = True
+        Me.gv_inventory.AppearancePrint.Preview.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(7, Byte))
+        Me.gv_inventory.AppearancePrint.Preview.Options.UseFont = True
+        Me.gv_inventory.AppearancePrint.Row.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(7, Byte))
+        Me.gv_inventory.AppearancePrint.Row.Options.UseFont = True
+        Me.gv_inventory.DetailHeight = 450
+        Me.gv_inventory.FixedLineWidth = 6
+        Me.gv_inventory.GridControl = Me.gc_inventory
+        Me.gv_inventory.HorzScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Always
+        Me.gv_inventory.Name = "gv_inventory"
+        Me.gv_inventory.OptionsBehavior.Editable = False
+        Me.gv_inventory.OptionsPrint.EnableAppearanceOddRow = True
+        Me.gv_inventory.OptionsSelection.MultiSelect = True
+        Me.gv_inventory.OptionsView.EnableAppearanceEvenRow = True
+        Me.gv_inventory.OptionsView.EnableAppearanceOddRow = True
+        Me.gv_inventory.OptionsView.RowAutoHeight = True
+        Me.gv_inventory.OptionsView.ShowAutoFilterRow = True
+        Me.gv_inventory.OptionsView.ShowGroupPanel = False
+        Me.gv_inventory.VertScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Always
+        '
+        'GridView6
+        '
+        Me.GridView6.GridControl = Me.gc_inventory
+        Me.GridView6.Name = "GridView6"
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Panel2.Controls.Add(Me.Button5)
+        Me.Panel2.Controls.Add(Me.Button6)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel2.Location = New System.Drawing.Point(2, 18)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(1563, 80)
+        Me.Panel2.TabIndex = 0
+        '
+        'Button5
+        '
+        Me.Button5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.Button5.Location = New System.Drawing.Point(200, 31)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(166, 31)
+        Me.Button5.TabIndex = 1
+        Me.Button5.Text = "Exportar"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.Button6.Location = New System.Drawing.Point(9, 31)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(166, 31)
+        Me.Button6.TabIndex = 0
+        Me.Button6.Text = "Buscar"
+        Me.Button6.UseVisualStyleBackColor = True
         '
         'imprimirQR
         '
@@ -743,6 +1273,27 @@ Partial Class Reinspeccion
         CType(Me.gv_datosRequest, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        CType(Me.dateFin.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dateFin.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dateIni.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dateIni.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox5.ResumeLayout(False)
+        Me.GroupBox5.PerformLayout()
+        Me.XtraTabPage2.ResumeLayout(False)
+        CType(Me.GroupControl2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl2.ResumeLayout(False)
+        Me.GroupControl2.PerformLayout()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
+        CType(Me.comboSortId.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.XtraTabPage3.ResumeLayout(False)
+        CType(Me.GroupControl3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl3.ResumeLayout(False)
+        CType(Me.gc_inventory, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gv_inventory, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridView6, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -794,4 +1345,42 @@ Partial Class Reinspeccion
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents labColor As System.Windows.Forms.Label
     Friend WithEvents checkImprimir As System.Windows.Forms.CheckBox
+    Friend WithEvents XtraTabPage2 As DevExpress.XtraTab.XtraTabPage
+    Friend WithEvents GroupControl2 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
+    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents comboSortId As DevExpress.XtraEditors.CheckedComboBoxEdit
+    Friend WithEvents Label24 As System.Windows.Forms.Label
+    Friend WithEvents textGrupo As System.Windows.Forms.TextBox
+    Friend WithEvents Label26 As System.Windows.Forms.Label
+    Friend WithEvents textMaster As System.Windows.Forms.TextBox
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents labBox As System.Windows.Forms.Label
+    Friend WithEvents XtraTabPage3 As DevExpress.XtraTab.XtraTabPage
+    Friend WithEvents GroupControl3 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents gc_inventory As DevExpress.XtraGrid.GridControl
+    Friend WithEvents gv_inventory As DevExpress.XtraGrid.Views.Grid.GridView
+    Friend WithEvents GridView6 As DevExpress.XtraGrid.Views.Grid.GridView
+    Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents textTotal As System.Windows.Forms.Label
+    Friend WithEvents labNG As System.Windows.Forms.Label
+    Friend WithEvents labGood As System.Windows.Forms.Label
+    Friend WithEvents labTotal As System.Windows.Forms.Label
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents GroupBox5 As System.Windows.Forms.GroupBox
+    Friend WithEvents Label19 As System.Windows.Forms.Label
+    Friend WithEvents labNG2 As System.Windows.Forms.Label
+    Friend WithEvents Label21 As System.Windows.Forms.Label
+    Friend WithEvents labGood2 As System.Windows.Forms.Label
+    Friend WithEvents Label20 As System.Windows.Forms.Label
+    Friend WithEvents labTotal2 As System.Windows.Forms.Label
+    Friend WithEvents dateFin As DevExpress.XtraEditors.DateEdit
+    Friend WithEvents Label17 As System.Windows.Forms.Label
+    Friend WithEvents dateIni As DevExpress.XtraEditors.DateEdit
+    Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents checkMaster As System.Windows.Forms.CheckBox
 End Class
